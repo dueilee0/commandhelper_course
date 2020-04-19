@@ -3,6 +3,17 @@
    msg('Hello World!') // 이 함수는 작업 실행자에게 매세지를 출력시켜요.
 <<<
 
-*:/whisper [$player = ''] [$ = ''] = >>>
+*:/whisper $player $ = >>>
    tmsg($player, player().':'$)
+<<<
+
+*:/fly = >>>
+if(phas_flight() == false) {
+   set_pflight(true)
+   set_pflying(true)
+   msg('§a플라이가 활성화 되었습니다.')
+} else {
+   set_pflight(false)
+   msg('§c플라이가 비활성화 되었습니다.')
+}
 <<<
