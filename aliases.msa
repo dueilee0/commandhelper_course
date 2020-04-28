@@ -19,3 +19,10 @@ if(phas_flight() == false) { // 플레이어가 날고 있지 않을 경우
    msg('§c플라이가 비활성화 되었습니다.')
 }
 <<<
+
+*:/clearchat = >>>
+for(int @i = 0, @i < 100, @i++) {
+   broadcast('')
+}
+broadcast('채팅창 청소 완료')
+<<<
